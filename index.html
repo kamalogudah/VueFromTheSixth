@@ -5,22 +5,35 @@
   <body>
     <div id='growler'>
       <h2> {{ appName }}</h2>
-  <input v-model='query' placeholder='search ...'>
-  <br/>
-  <div> Searching for: {{ query }} </div>    
-   
-    <h2> Checkboxes Binding</h2>
-    <div>
-      <label>
-        <input type="checkbox" value="beers" v-model="searchIndexes"/> Beers
-      </label>
-      <br/>
-      <label>
-        <input type="checkbox" value="breweries" v-model="searchIndexes"/> Breweries </label>
-   <br/>
-        <small>
-          Selected: {{ searchIndexes }}
-        </small>
+        <input v-model='query' placeholder='search ...'>
+        <br/>
+        <div> Searching for: {{ query }} </div>    
+        <h2> Checkboxes Binding</h2>
+        <div>
+           <label>
+            <input type="checkbox" value="beers" v-model="searchIndexes"/> Beers
+          </label>
+          <br/>
+          <label>
+            <input type="checkbox" value="breweries" v-model="searchIndexes"/> Breweries </label>
+            <br/>
+            <small>
+              Selected: {{ searchIndexes }}
+            </small>
+        </div>
+
+        <h2> Radio Buttons Binding</h2>
+        <div>
+          <label class="form-check-label">
+            <input type="radio" value="beers" v-model="otherSearchIndexes"/> Beers
+          </label>
+          <br/>
+          <label class="form-check-label">
+            <input type="radio" value="breweries" v-model="otherSearchIndexes"/> Breweries </label>
+       <br/>
+       <small>
+        Selected: {{ otherSearchIndexes }}
+      </small>
         </div>
     </div>
 

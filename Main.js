@@ -4,7 +4,8 @@ var growler = new Vue({
     appName: 'Growler',
     query: '',
     isPowerSyntaxEnabled: false,
-    searchIndexes: []
+    searchIndexes: [],
+    otherSearchIndexes: []
 
   }
 })
