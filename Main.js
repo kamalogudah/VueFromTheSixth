@@ -9,3 +9,11 @@ var growler = new Vue({
 
   }
 })
+
+new Vue({
+  el: '#selecti',
+  data: {
+    selectedSearchIndex: 'beers',
+    selectedSearchIndexes: ['beers', 'pubs']
+  }
+})
