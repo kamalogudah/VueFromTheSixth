@@ -5,7 +5,7 @@
   <body>
     <div id='growler'>
       <h2> {{ appName }}</h2>
-        <input v-model.trim='query' placeholder='search ...'>
+        <input v-model.lazy.trim='query' placeholder='search ...'>
         <br/>
         <div> Searching for: {{ query }} </div>    
         <h2> Checkboxes Binding</h2>
