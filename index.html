@@ -8,6 +8,20 @@
   <input v-model='query' placeholder='search ...'>
   <br/>
   <div> Searching for: {{ query }} </div>    
+   
+    <h2> Checkboxes Binding</h2>
+    <div>
+      <label>
+        <input type="checkbox" value="beers" v-model="searchIndexes"/> Beers
+      </label>
+      <br/>
+      <label>
+        <input type="checkbox" value="breweries" v-model="searchIndexes"/> Breweries </label>
+   <br/>
+        <small>
+          Selected: {{ searchIndexes }}
+        </small>
+        </div>
     </div>
 
     <script type='text/javascript' src="https://unpkg.com/vue"></script>

@@ -2,7 +2,9 @@ var growler = new Vue({
   el: '#growler',
   data: {
     appName: 'Growler',
-    query: ''
+    query: '',
+    isPowerSyntaxEnabled: false,
+    searchIndexes: []
 
   }
 })
